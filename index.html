@@ -13,40 +13,31 @@
 </head>
 
 <body>
-    <h1>My Library </h1>
-    <h2>My current collection of books!</h2>
-    <div class="grid-container">
-        <div class="card">
-            <div class="card-title">The Amazing 5</div>
-            <div class="card-content">
-                <ul>
-                    <li>Author: <span> Manolis</span></li>
-                    <li>Pages: <span> 666</span></li>
-                    <li>Read: <span> Not Yet!</span></li>
-                </ul>
-            </div>
+    <section class="intro">
+        <h1>My Library </h1>
+        <h2>My current collection of books!</h2>
+        <button id="add_book">Add Book</button>
+    </section>
+    <section class="main-content">
+        <div class="grid-container">
         </div>
-        <div class="card">
-            <div class="card-title">The Amazing 5</div>
-            <div class="card-content">
-                <ul>
-                    <li>Author: <span> Manolis</span></li>
-                    <li>Pages: <span> 666</span></li>
-                    <li>Read: <span> Not Yet!</span></li>
-                </ul>
-            </div>
+    </section>
+    <section class="add-book-modal">
+        <div class="modal">
+            <h2>Add Book</h2>
+            <form action="">
+                <label for="">Title</label>
+                <input id="title" type="text">
+                <label for="">Author</label>
+                <input id="author" type="text">
+                <label for="">Number of Pages</label>
+                <input id="pages-number" type="number" min="1" max="33000">
+                <label for="read">Select if you have read the book.</label>
+                <input id="read" type="checkbox" name="read">
+                <button class="submit" type="submit">Submit</button>
+            </form>
         </div>
-        <div class="card">
-            <div class="card-title">The Amazing 5</div>
-            <div class="card-content">
-                <ul>
-                    <li>Author: <span> Manolis</span></li>
-                    <li>Pages: <span> 666</span></li>
-                    <li>Read: <span> Not Yet!</span></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </section>
 
 
 
